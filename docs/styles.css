@@ -12557,8 +12557,8 @@ textarea.form-control-lg {
 .btn-social:active,
 .btn-social.active,
 .open > .dropdown-toggle.btn-social {
-  color: #FF0040;
-  border-color: #FF0040;
+  color: #ff0040;
+  border-color: #ff0040;
 }
 p {
   font-size: 1.2rem;

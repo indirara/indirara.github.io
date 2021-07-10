@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Indira\programare\safaera\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! C:\Indira\programare\indirara.github.io\src\polyfills.ts */"hN/g");
 
 
 /***/ }),
