@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DigitalsComponent } from './digitals/digitals.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { HomeComponent } from './home/home.component';
     PortfolioComponent,
     HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NgOptimizedImage],
   providers: [],
   bootstrap: [AppComponent],
 })
