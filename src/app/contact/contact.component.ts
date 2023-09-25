@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  constructor(private readonly httpClient: HttpClient) {}
+
+  getInstaFeed(): void {
+    const apiVersion = '11.0';
+    const userId = 'indira.vtm';
+  }
 }
