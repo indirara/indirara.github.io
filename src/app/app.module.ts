@@ -8,7 +8,6 @@ import { DigitalsComponent } from './digitals/digitals.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
 import { NgOptimizedImage } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     PortfolioComponent,
     HomeComponent,
   ],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule, NgOptimizedImage],
+  imports: [BrowserModule, AppRoutingModule, NgOptimizedImage],
   providers: [],
   bootstrap: [AppComponent],
 })

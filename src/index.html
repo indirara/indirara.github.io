@@ -19,14 +19,20 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <!-- The Javascript can be moved to the end of the html page before the </body> tag --><script type="text/javascript">
+    <script type="text/javascript">
       /* curator-feed-default-feed-layout */
-      (function(){
-        if (window.location.href.includes('contact')) {
-          var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-          i.src="https://cdn.curator.io/published/6dd73d0f-077d-4a36-bcd9-3891e883c234.js";
-          e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-        }
+      (function () {
+        var i,
+          e,
+          d = document,
+          s = "script";
+        i = d.createElement("script");
+        i.async = 1;
+        i.charset = "UTF-8";
+        i.src =
+          "https://cdn.curator.io/published/6dd73d0f-077d-4a36-bcd9-3891e883c234.js";
+        e = d.getElementsByTagName(s)[0];
+        e.parentNode.insertBefore(i, e);
       })();
     </script>
   </body>

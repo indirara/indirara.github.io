@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  reloadCheckVar = 'reloadCheck';
 
-  constructor(private readonly httpClient: HttpClient) {}
-
-  getInstaFeed(): void {
-    const apiVersion = '11.0';
-    const userId = 'indira.vtm';
+  ngOnInit(): void {
+    if (!localStorage.getItem(this.reloadCheckVar)) {
+      localStorage.setItem(this.reloadCheckVar, 'no reload');
+      location.reload();
+    } else {
+      localStorage.removeItem(this.reloadCheckVar);
+    }
   }
 }
